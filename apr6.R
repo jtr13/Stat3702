@@ -5,6 +5,7 @@ library(readxl)
 nypp <- read_sf("nypp_25c/nypp.shp")
 
 head(nypp)
+tail(nypp)
 
 ggplot(nypp) +
   geom_sf() +
