@@ -1,3 +1,9 @@
 # Stat3702
+Test repository ok to delete
 
-lalala, edited by penny
+Example for class on creating a repository and making changes.
+
+You will not find anything useful here!
+
+
+😃😃😃
