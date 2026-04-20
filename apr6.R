@@ -15,7 +15,7 @@ ggplot(nypp) +
 ny_crime <- read_xls("felony.xls", skip = 2) |> 
   fill(PCT) |> 
   filter(CRIME == "ROBBERY") |> 
-  select(Precinct = PCT, CRIME, Robbery = `2021`) |> 
+  select(Precinct = PCT, CRIME, Robbery = `2012`) |> 
   mutate(Precinct = as.numeric(Precinct))
 
 plot_data <- left_join(nypp, ny_crime)
@@ -24,6 +24,4 @@ ggplot(plot_data) +
   geom_sf(aes(fill = Robbery)) + 
   geom_sf_text(aes(label = Precinct), size = 2,
                color = "white") +
-  theme_void()
-
-hi world
+  theme_classic()
